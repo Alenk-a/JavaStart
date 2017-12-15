@@ -1,0 +1,22 @@
+package JavaOOP.HW.HW.Lessons3_4.Text;
+
+public class TextRunner {
+    public static void main(String[] args) {
+        Text text=new Text(new Word("Java"));
+
+        Word wd1=new Word("I");
+        Word wd2=new Word("learn");
+        Word wd3=new Word("Java");
+
+        Sentence sentence=new Sentence();
+        sentence.addSentence(wd1);
+        sentence.addSentence(wd2);
+        sentence.addSentence(wd3);
+
+        text.addBody(sentence);
+
+        System.out.println("       "+text.getHeading());
+        System.out.println("   "+text.getBody());
+
+    }
+}
