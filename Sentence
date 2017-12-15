@@ -1,0 +1,19 @@
+package JavaOOP.HW.HW.Lessons3_4.Text;
+
+public class Sentence {
+    private String phrase = " ";
+
+    public void addSentence(Word word) {
+        phrase += " " + word.getWord();
+    }
+
+    @Override
+    public String toString() {
+        return "Sentence{" + phrase +
+                '}';
+    }
+
+    public String getSentence() {
+        return phrase;
+    }
+}
